@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mqtt_act">
+
+    <TextView
+        android:id="@+id/tvMqttTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MQTT Books"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.137" />
+
+    <LinearLayout
+        android:layout_width="338dp"
+        android:layout_height="387dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btnRevival"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="revival"
+            android:text="REVIVAL" />
+
+        <Button
+            android:id="@+id/btnFarenheit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="farenheit"
+            android:text="FARENHEIT" />
+
+        <Button
+            android:id="@+id/btnElAlquimista"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="elAlquimista"
+            android:text="EL ALQUIMISTA" />
+
+        <Button
+            android:id="@+id/btnElPoder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="elPoder"
+            android:text="EL PODER" />
+
+        <Button
+            android:id="@+id/btnElDespertar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="elDespertar"
+            android:text="EL DESPERTAR" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
